@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2cd317b115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>ToDo List</h1>
+    <div>
+      <input type="text" id="newTaskInput" placeholder="Noter votre tâche ici"/>
+      <i class="fas fa-plus-square" id="newTaskSubmit"></i>
+    </div>
+    <div class="filter">
+      <select id="filter">
+        <option value="all">Tous</option>
+        <option value="finish">Terminé</option>
+        <option value="toDo">À faire</option>
+      </select>
+    </div>
+  </header>
+    <div id="listTasks">
+      <div class="task">
+        <div id="finish"></div>
+        <p>Ma tâche</p>
+        <i class="fas fa-check" id="check"></i>
+        <i class="fas fa-trash" id="trash"></i>
+      </div>
+      <div class="task disabled">
+        <div class="check" id="finish"></div>
+        <p class="finishP">Ma tâche</p>
+        <i class="fas fa-check" id="check"></i>
+        <i class="fas fa-trash" id="trash"></i>
+      </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
