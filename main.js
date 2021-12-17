@@ -21,10 +21,6 @@ add.addEventListener('click', () => {
   iCheck.className = 'fas fa-check';
   iCheck.id = 'check';
   taskDiv.appendChild(iCheck);
-  const iTrash= document.createElement('i');
-  iTrash.className = 'fas fa-trash';
-  iTrash.id = 'trash';
-  taskDiv.appendChild(iTrash);
   input.value = '';
   listTasks.appendChild(taskDiv);
   filter();
@@ -37,8 +33,6 @@ window.addEventListener('click', (e) => {
     task.classList = 'task disabled';
     task.children[0].classList = 'check';
     task.children[1].classList = 'finishP';
-  } else if (e.target.id == 'trash') {
-    e.target.parentNode.remove();
   }
 })
 
