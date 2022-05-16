@@ -1,26 +1,27 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(#455da7, #492077);
-    color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     max-width: 100vw;
     text-align: center;
-    padding: 10px;
+    background: linear-gradient(#455da7, #492077);
+    color: whitesmoke;
+    margin: 10px 0;
 }
 
 header {
-  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
+  max-width: 80%;
 }
 
 header > * {
@@ -37,6 +38,7 @@ header div {
   border: none;
   background-color: #f4f4f4;
   padding: 0 0.5rem;
+  width: 80%;
 }
 
 #newTaskSubmit {
@@ -68,7 +70,6 @@ header div {
 }
 
 #listTasks {
-  height: 80%;
   width: 80%;
   display: flex;
   align-items: center;
